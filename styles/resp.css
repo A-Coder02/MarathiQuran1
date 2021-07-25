@@ -91,9 +91,10 @@
   section.quran-ayat-window.block {
     width: 100%;
   }
-  .quran-nav-wrapper {
+.quran-nav-wrapper {
     width: 100%;
-    position: relative;
+    position: fixed;
+    top: 55px;
 }
 .quran-nav-item.quran-asat {
     background: darkslategray;
@@ -103,12 +104,13 @@
     height: 76px;
 	transition:0.4s !important;
 }
-  section.quran-wrapper {
+section.quran-wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
     height: fit-content;
-  }
+    padding-top: 57px;
+}
 .toggle-button {
     width: 30px;
     height: 30px;

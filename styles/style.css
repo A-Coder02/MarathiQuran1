@@ -49,14 +49,16 @@ body {
 }
 /* HEader START */
 .header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  background: var(--s-clr);
-  padding: 0.5rem 1rem;
-  color: white;
-  align-items: center;
-  font-family: --var(--marathi);
-  z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    background: var(--s-clr);
+    padding: 0.5rem 1rem;
+    color: white;
+    align-items: center;
+    font-family: --var(--marathi);
+    z-index: 5;
+    position: fixed;
+    width: 100%;
 }
 img.brand-logo {
   filter: grayscale(1) saturate(1.5) brightness(6.5);
@@ -602,4 +604,9 @@ section.quran-wrapper {
 .quran-item-next > a > p:nth-child(1)::before {
     counter-increment: section;
     content: " ";
+}
+
+.padding-top {
+    
+    padding-top: 69px;
 }
