@@ -1,0 +1,137 @@
+:root {
+  --anim-time: 2s;
+}
+.intro-name {
+  animation-name: intro-name;
+  animation-duration: var(--anim-time);
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  mix-blend-mode: multiply;
+  font-family: var(--marathi);
+}
+@keyframes intro-name {
+  to {
+    opacity: 1;
+  }
+}
+.intro-background-wrapper::before {
+  animation-name: intro-name1;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes intro-name1 {
+  50% {
+    background: #000000bf;
+  }
+  100% {
+    background: #000000bf;
+  }
+}
+.intro-section-wrapper {
+  animation-name: intro-sect;
+  animation-duration: 2s;
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes intro-sect {
+  to {
+    width: 45%;
+  }
+}
+.intro-section-item {
+  animation-name: intro-bw1;
+  animation-duration: 2s;
+  animation-delay: 4.7s;
+  animation-fill-mode: forwards;
+  mix-blend-mode: normal;
+}
+@keyframes intro-bw1 {
+  to {
+    mix-blend-mode: normal;
+  }
+}
+.intro-background-wrapper {
+  animation-name: intro-bw;
+  animation-duration: 2s;
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes intro-bw {
+  to {
+    clip-path: circle(57.9% at 100% 50%);
+  }
+}
+.header-anim {
+  animation-name: header-anim;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  width: 100%;
+  animation-fill-mode: forwards;
+  position: fixed;
+  top: -100%;
+  box-shadow: 0 0 2px black;
+}
+@keyframes header-anim {
+  to {
+    top: 0%;
+  }
+}
+
+.intro-quote {
+  animation-name: intro-q;
+  animation-duration: 1.5s;
+  animation-delay: 6s;
+  width: 100%;
+  animation-fill-mode: forwards;
+  top: -100%;
+  opacity: 0;
+}
+@keyframes intro-q {
+  to {
+    top: 0%;
+    opacity: 1;
+  }
+}
+.btn-anim {
+  animation-name: btn-anim;
+  animation-duration: 1.5s;
+  animation-delay: 6.7s;
+  animation-fill-mode: forwards;
+  top: -100%;
+  opacity: 0;
+}
+@keyframes btn-anim {
+  to {
+    top: 0%;
+    opacity: 1;
+  }
+}
+.btn-anim1 {
+  animation-name: btn-anim1;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes btn-anim1 {
+  to {
+    opacity: 1;
+  }
+}
+.intro-quran-paragraph {
+  animation-name: intro-surah;
+  animation-duration: 1.5s;
+  animation-delay: 7.7s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  left: 0;
+  transition: 1s;
+  width: 100%;
+}
+@keyframes intro-surah {
+  to {
+    opacity: 1;
+  }
+}

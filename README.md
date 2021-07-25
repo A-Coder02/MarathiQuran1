@@ -1,1 +1,1 @@
-# MarathiQuran1
+# marathiQuran
